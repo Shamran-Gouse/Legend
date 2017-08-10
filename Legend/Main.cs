@@ -58,5 +58,29 @@ namespace Legend
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            if (!panel_Body.Controls.Contains(Student.Instance))
+            {
+                panel_Body.Controls.Add(Student.Instance);
+                Student.Instance.Dock = DockStyle.Fill;
+                Student.Instance.BringToFront();
+            }
+            else
+                Student.Instance.BringToFront();
+        }
+
+        private void Btn_Class_Click(object sender, EventArgs e)
+        {
+            if (!panel_Body.Controls.Contains(Class.Instance))
+            {
+                panel_Body.Controls.Add(Class.Instance);
+                Class.Instance.Dock = DockStyle.Fill;
+                Class.Instance.BringToFront();
+            }
+            else
+                Class.Instance.BringToFront();
+        }
     }
 }

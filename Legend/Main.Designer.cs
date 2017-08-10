@@ -40,7 +40,7 @@
             this.bunifuFlatButton6 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton5 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Btn_Class = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Btn_Student = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel_Logo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -100,7 +100,7 @@
             this.panel2.Controls.Add(this.bunifuFlatButton6);
             this.panel2.Controls.Add(this.bunifuFlatButton5);
             this.panel2.Controls.Add(this.bunifuFlatButton3);
-            this.panel2.Controls.Add(this.bunifuFlatButton1);
+            this.panel2.Controls.Add(this.Btn_Class);
             this.panel2.Controls.Add(this.Btn_Student);
             this.panel2.Controls.Add(this.panel_Logo);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
@@ -284,40 +284,41 @@
             this.bunifuFlatButton3.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
             this.bunifuFlatButton3.TextFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // bunifuFlatButton1
+            // Btn_Class
             // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.DodgerBlue;
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "    Student";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 30;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 35D;
-            this.bunifuFlatButton1.IsTab = true;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(0, 218);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(181, 48);
-            this.bunifuFlatButton1.TabIndex = 1;
-            this.bunifuFlatButton1.Text = "    Student";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Class.Activecolor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Class.BackColor = System.Drawing.Color.White;
+            this.Btn_Class.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_Class.BorderRadius = 0;
+            this.Btn_Class.ButtonText = "    Class";
+            this.Btn_Class.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_Class.DisabledColor = System.Drawing.Color.Gray;
+            this.Btn_Class.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Btn_Class.Iconcolor = System.Drawing.Color.Transparent;
+            this.Btn_Class.Iconimage = ((System.Drawing.Image)(resources.GetObject("Btn_Class.Iconimage")));
+            this.Btn_Class.Iconimage_right = null;
+            this.Btn_Class.Iconimage_right_Selected = null;
+            this.Btn_Class.Iconimage_Selected = null;
+            this.Btn_Class.IconMarginLeft = 30;
+            this.Btn_Class.IconMarginRight = 0;
+            this.Btn_Class.IconRightVisible = true;
+            this.Btn_Class.IconRightZoom = 0D;
+            this.Btn_Class.IconVisible = true;
+            this.Btn_Class.IconZoom = 45D;
+            this.Btn_Class.IsTab = true;
+            this.Btn_Class.Location = new System.Drawing.Point(0, 218);
+            this.Btn_Class.Name = "Btn_Class";
+            this.Btn_Class.Normalcolor = System.Drawing.Color.White;
+            this.Btn_Class.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.Btn_Class.OnHoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.Btn_Class.selected = false;
+            this.Btn_Class.Size = new System.Drawing.Size(181, 48);
+            this.Btn_Class.TabIndex = 1;
+            this.Btn_Class.Text = "    Class";
+            this.Btn_Class.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_Class.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
+            this.Btn_Class.TextFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Class.Click += new System.EventHandler(this.Btn_Class_Click);
             // 
             // Btn_Student
             // 
@@ -339,7 +340,7 @@
             this.Btn_Student.IconRightVisible = true;
             this.Btn_Student.IconRightZoom = 0D;
             this.Btn_Student.IconVisible = true;
-            this.Btn_Student.IconZoom = 35D;
+            this.Btn_Student.IconZoom = 45D;
             this.Btn_Student.IsTab = true;
             this.Btn_Student.Location = new System.Drawing.Point(0, 170);
             this.Btn_Student.Name = "Btn_Student";
@@ -403,6 +404,7 @@
             this.Location = new System.Drawing.Point(50, 25);
             this.Name = "Main";
             this.Text = "Main";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
@@ -427,7 +429,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton6;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton5;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+        private Bunifu.Framework.UI.BunifuFlatButton Btn_Class;
         private Bunifu.Framework.UI.BunifuFlatButton Btn_Student;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private System.Windows.Forms.PictureBox pictureBox1;

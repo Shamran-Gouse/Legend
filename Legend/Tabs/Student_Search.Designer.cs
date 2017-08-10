@@ -1,6 +1,6 @@
 ﻿namespace Legend.Tabs
 {
-    partial class Student_Register
+    partial class Student_Search
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Student_Register));
-            this.Btn_Clear = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.Btn_Register = new Bunifu.Framework.UI.BunifuThinButton2();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Student_Search));
+            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.txt_Email = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_Contact_No = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -42,59 +43,84 @@
             this.Dropdown_Grade = new Bunifu.Framework.UI.BunifuDropdown();
             this.Dropdown_Medium = new Bunifu.Framework.UI.BunifuDropdown();
             this.Dropdown_Gender = new Bunifu.Framework.UI.BunifuDropdown();
+            this.Line = new Bunifu.Framework.UI.BunifuSeparator();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // Btn_Clear
+            // bunifuThinButton22
             // 
-            this.Btn_Clear.ActiveBorderThickness = 1;
-            this.Btn_Clear.ActiveCornerRadius = 1;
-            this.Btn_Clear.ActiveFillColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Clear.ActiveForecolor = System.Drawing.Color.White;
-            this.Btn_Clear.ActiveLineColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Clear.BackColor = System.Drawing.SystemColors.Control;
-            this.Btn_Clear.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Clear.BackgroundImage")));
-            this.Btn_Clear.ButtonText = "Clear";
-            this.Btn_Clear.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_Clear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Clear.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Clear.IdleBorderThickness = 1;
-            this.Btn_Clear.IdleCornerRadius = 1;
-            this.Btn_Clear.IdleFillColor = System.Drawing.Color.White;
-            this.Btn_Clear.IdleForecolor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Clear.IdleLineColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Clear.Location = new System.Drawing.Point(559, 447);
-            this.Btn_Clear.Margin = new System.Windows.Forms.Padding(5);
-            this.Btn_Clear.Name = "Btn_Clear";
-            this.Btn_Clear.Size = new System.Drawing.Size(110, 47);
-            this.Btn_Clear.TabIndex = 7;
-            this.Btn_Clear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Btn_Clear.Click += new System.EventHandler(this.Btn_Clear_Click);
+            this.bunifuThinButton22.ActiveBorderThickness = 1;
+            this.bunifuThinButton22.ActiveCornerRadius = 1;
+            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuThinButton22.BackColor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
+            this.bunifuThinButton22.ButtonText = "Remove";
+            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton22.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuThinButton22.IdleBorderThickness = 1;
+            this.bunifuThinButton22.IdleCornerRadius = 1;
+            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.DodgerBlue;
+            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuThinButton22.Location = new System.Drawing.Point(708, 463);
+            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton22.Name = "bunifuThinButton22";
+            this.bunifuThinButton22.Size = new System.Drawing.Size(110, 47);
+            this.bunifuThinButton22.TabIndex = 48;
+            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Btn_Register
+            // bunifuThinButton21
             // 
-            this.Btn_Register.ActiveBorderThickness = 1;
-            this.Btn_Register.ActiveCornerRadius = 1;
-            this.Btn_Register.ActiveFillColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Register.ActiveForecolor = System.Drawing.Color.White;
-            this.Btn_Register.ActiveLineColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Register.BackColor = System.Drawing.SystemColors.Control;
-            this.Btn_Register.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Register.BackgroundImage")));
-            this.Btn_Register.ButtonText = "Register";
-            this.Btn_Register.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_Register.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Register.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Register.IdleBorderThickness = 1;
-            this.Btn_Register.IdleCornerRadius = 1;
-            this.Btn_Register.IdleFillColor = System.Drawing.Color.White;
-            this.Btn_Register.IdleForecolor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Register.IdleLineColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Register.Location = new System.Drawing.Point(679, 447);
-            this.Btn_Register.Margin = new System.Windows.Forms.Padding(5);
-            this.Btn_Register.Name = "Btn_Register";
-            this.Btn_Register.Size = new System.Drawing.Size(110, 47);
-            this.Btn_Register.TabIndex = 8;
-            this.Btn_Register.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Btn_Register.Click += new System.EventHandler(this.Btn_Register_Click);
+            this.bunifuThinButton21.ActiveBorderThickness = 1;
+            this.bunifuThinButton21.ActiveCornerRadius = 1;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = "Update";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuThinButton21.IdleBorderThickness = 1;
+            this.bunifuThinButton21.IdleCornerRadius = 1;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.DodgerBlue;
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuThinButton21.Location = new System.Drawing.Point(588, 463);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(110, 47);
+            this.bunifuThinButton21.TabIndex = 47;
+            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bunifuThinButton23
+            // 
+            this.bunifuThinButton23.ActiveBorderThickness = 1;
+            this.bunifuThinButton23.ActiveCornerRadius = 1;
+            this.bunifuThinButton23.ActiveFillColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuThinButton23.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton23.ActiveLineColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuThinButton23.BackColor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton23.BackgroundImage")));
+            this.bunifuThinButton23.ButtonText = "Clear";
+            this.bunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton23.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton23.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuThinButton23.IdleBorderThickness = 1;
+            this.bunifuThinButton23.IdleCornerRadius = 1;
+            this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.DodgerBlue;
+            this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuThinButton23.Location = new System.Drawing.Point(468, 463);
+            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton23.Name = "bunifuThinButton23";
+            this.bunifuThinButton23.Size = new System.Drawing.Size(110, 47);
+            this.bunifuThinButton23.TabIndex = 49;
+            this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txt_Email
             // 
@@ -108,11 +134,11 @@
             this.txt_Email.LineIdleColor = System.Drawing.Color.DodgerBlue;
             this.txt_Email.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txt_Email.LineThickness = 3;
-            this.txt_Email.Location = new System.Drawing.Point(105, 384);
+            this.txt_Email.Location = new System.Drawing.Point(110, 411);
             this.txt_Email.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Email.Name = "txt_Email";
             this.txt_Email.Size = new System.Drawing.Size(379, 33);
-            this.txt_Email.TabIndex = 6;
+            this.txt_Email.TabIndex = 97;
             this.txt_Email.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txt_Contact_No
@@ -127,11 +153,11 @@
             this.txt_Contact_No.LineIdleColor = System.Drawing.Color.DodgerBlue;
             this.txt_Contact_No.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txt_Contact_No.LineThickness = 3;
-            this.txt_Contact_No.Location = new System.Drawing.Point(105, 329);
+            this.txt_Contact_No.Location = new System.Drawing.Point(110, 356);
             this.txt_Contact_No.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Contact_No.Name = "txt_Contact_No";
             this.txt_Contact_No.Size = new System.Drawing.Size(379, 33);
-            this.txt_Contact_No.TabIndex = 5;
+            this.txt_Contact_No.TabIndex = 96;
             this.txt_Contact_No.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txt_School
@@ -146,11 +172,11 @@
             this.txt_School.LineIdleColor = System.Drawing.Color.DodgerBlue;
             this.txt_School.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txt_School.LineThickness = 3;
-            this.txt_School.Location = new System.Drawing.Point(105, 272);
+            this.txt_School.Location = new System.Drawing.Point(110, 299);
             this.txt_School.Margin = new System.Windows.Forms.Padding(4);
             this.txt_School.Name = "txt_School";
             this.txt_School.Size = new System.Drawing.Size(617, 33);
-            this.txt_School.TabIndex = 4;
+            this.txt_School.TabIndex = 95;
             this.txt_School.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txt_Address
@@ -165,11 +191,11 @@
             this.txt_Address.LineIdleColor = System.Drawing.Color.DodgerBlue;
             this.txt_Address.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txt_Address.LineThickness = 3;
-            this.txt_Address.Location = new System.Drawing.Point(105, 215);
+            this.txt_Address.Location = new System.Drawing.Point(110, 242);
             this.txt_Address.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Address.Name = "txt_Address";
             this.txt_Address.Size = new System.Drawing.Size(617, 33);
-            this.txt_Address.TabIndex = 3;
+            this.txt_Address.TabIndex = 94;
             this.txt_Address.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txt_Full_Name
@@ -184,11 +210,11 @@
             this.txt_Full_Name.LineIdleColor = System.Drawing.Color.DodgerBlue;
             this.txt_Full_Name.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txt_Full_Name.LineThickness = 3;
-            this.txt_Full_Name.Location = new System.Drawing.Point(105, 158);
+            this.txt_Full_Name.Location = new System.Drawing.Point(110, 185);
             this.txt_Full_Name.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Full_Name.Name = "txt_Full_Name";
             this.txt_Full_Name.Size = new System.Drawing.Size(617, 33);
-            this.txt_Full_Name.TabIndex = 2;
+            this.txt_Full_Name.TabIndex = 93;
             this.txt_Full_Name.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txt_Name_Initial
@@ -203,11 +229,11 @@
             this.txt_Name_Initial.LineIdleColor = System.Drawing.Color.DodgerBlue;
             this.txt_Name_Initial.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txt_Name_Initial.LineThickness = 3;
-            this.txt_Name_Initial.Location = new System.Drawing.Point(105, 100);
+            this.txt_Name_Initial.Location = new System.Drawing.Point(110, 127);
             this.txt_Name_Initial.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Name_Initial.Name = "txt_Name_Initial";
             this.txt_Name_Initial.Size = new System.Drawing.Size(379, 33);
-            this.txt_Name_Initial.TabIndex = 1;
+            this.txt_Name_Initial.TabIndex = 92;
             this.txt_Name_Initial.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // Dropdown_Grade
@@ -232,14 +258,14 @@
         "After OL",
         "AL",
         "After AL"};
-            this.Dropdown_Grade.Location = new System.Drawing.Point(508, 319);
+            this.Dropdown_Grade.Location = new System.Drawing.Point(513, 346);
             this.Dropdown_Grade.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Dropdown_Grade.Name = "Dropdown_Grade";
             this.Dropdown_Grade.NomalColor = System.Drawing.Color.DeepSkyBlue;
             this.Dropdown_Grade.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.Dropdown_Grade.selectedIndex = 0;
             this.Dropdown_Grade.Size = new System.Drawing.Size(217, 43);
-            this.Dropdown_Grade.TabIndex = 81;
+            this.Dropdown_Grade.TabIndex = 99;
             // 
             // Dropdown_Medium
             // 
@@ -252,14 +278,14 @@
         "Medium :",
         "Tamil",
         "English"};
-            this.Dropdown_Medium.Location = new System.Drawing.Point(508, 373);
+            this.Dropdown_Medium.Location = new System.Drawing.Point(513, 400);
             this.Dropdown_Medium.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Dropdown_Medium.Name = "Dropdown_Medium";
             this.Dropdown_Medium.NomalColor = System.Drawing.Color.DeepSkyBlue;
             this.Dropdown_Medium.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.Dropdown_Medium.selectedIndex = 0;
             this.Dropdown_Medium.Size = new System.Drawing.Size(217, 44);
-            this.Dropdown_Medium.TabIndex = 91;
+            this.Dropdown_Medium.TabIndex = 100;
             // 
             // Dropdown_Gender
             // 
@@ -272,19 +298,41 @@
         "Gender :",
         "Male",
         "Female"};
-            this.Dropdown_Gender.Location = new System.Drawing.Point(508, 90);
+            this.Dropdown_Gender.Location = new System.Drawing.Point(513, 117);
             this.Dropdown_Gender.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Dropdown_Gender.Name = "Dropdown_Gender";
             this.Dropdown_Gender.NomalColor = System.Drawing.Color.DeepSkyBlue;
             this.Dropdown_Gender.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.Dropdown_Gender.selectedIndex = 0;
             this.Dropdown_Gender.Size = new System.Drawing.Size(217, 43);
-            this.Dropdown_Gender.TabIndex = 70;
+            this.Dropdown_Gender.TabIndex = 98;
             // 
-            // Student_Register
+            // Line
+            // 
+            this.Line.BackColor = System.Drawing.Color.Transparent;
+            this.Line.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.Line.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(144)))), ((int)(((byte)(255)))));
+            this.Line.LineThickness = 4;
+            this.Line.Location = new System.Drawing.Point(0, 98);
+            this.Line.Name = "Line";
+            this.Line.Size = new System.Drawing.Size(830, 12);
+            this.Line.TabIndex = 101;
+            this.Line.Transparency = 255;
+            this.Line.Vertical = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(180, 27);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(452, 55);
+            this.panel1.TabIndex = 102;
+            // 
+            // Student_Search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.Line);
             this.Controls.Add(this.txt_Email);
             this.Controls.Add(this.txt_Contact_No);
             this.Controls.Add(this.txt_School);
@@ -294,17 +342,20 @@
             this.Controls.Add(this.Dropdown_Grade);
             this.Controls.Add(this.Dropdown_Medium);
             this.Controls.Add(this.Dropdown_Gender);
-            this.Controls.Add(this.Btn_Register);
-            this.Controls.Add(this.Btn_Clear);
-            this.Name = "Student_Register";
+            this.Controls.Add(this.bunifuThinButton23);
+            this.Controls.Add(this.bunifuThinButton22);
+            this.Controls.Add(this.bunifuThinButton21);
+            this.Name = "Student_Search";
             this.Size = new System.Drawing.Size(830, 515);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Bunifu.Framework.UI.BunifuThinButton2 Btn_Clear;
-        private Bunifu.Framework.UI.BunifuThinButton2 Btn_Register;
+
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
         private System.Windows.Forms.ToolTip toolTip1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_Email;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_Contact_No;
@@ -315,5 +366,7 @@
         private Bunifu.Framework.UI.BunifuDropdown Dropdown_Grade;
         private Bunifu.Framework.UI.BunifuDropdown Dropdown_Medium;
         private Bunifu.Framework.UI.BunifuDropdown Dropdown_Gender;
+        private Bunifu.Framework.UI.BunifuSeparator Line;
+        private System.Windows.Forms.Panel panel1;
     }
 }

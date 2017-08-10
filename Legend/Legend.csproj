@@ -51,6 +51,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\CLASS_CON.cs" />
+    <Compile Include="Classes\CLASS_STUDENT.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +61,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tabs\Class.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Class.Designer.cs">
+      <DependentUpon>Class.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tabs\Student.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -70,6 +78,18 @@
     </Compile>
     <Compile Include="Tabs\Student_Register.Designer.cs">
       <DependentUpon>Student_Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Student_Search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Student_Search.Designer.cs">
+      <DependentUpon>Student_Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Student_View.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Student_View.Designer.cs">
+      <DependentUpon>Student_View.cs</DependentUpon>
     </Compile>
     <Compile Include="Tabs\UserControl1.cs">
       <SubType>UserControl</SubType>
@@ -89,11 +109,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Tabs\Class.resx">
+      <DependentUpon>Class.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tabs\Student.resx">
       <DependentUpon>Student.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tabs\Student_Register.resx">
       <DependentUpon>Student_Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Student_Search.resx">
+      <DependentUpon>Student_Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Student_View.resx">
+      <DependentUpon>Student_View.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tabs\UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>

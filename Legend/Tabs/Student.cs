@@ -50,12 +50,45 @@ namespace Legend.Tabs
         {
             Line.Width = Tab_Search.Width;
             Line.Left = Tab_Search.Left;
+
+            if (!panel_Student.Controls.Contains(Student_Search.Instance))
+            {
+                panel_Student.Controls.Add(Student_Search.Instance);
+                Student_Search.Instance.Dock = DockStyle.Fill;
+                Student_Search.Instance.BringToFront();
+            }
+            else
+                Student_Search.Instance.BringToFront();
         }
 
         private void Tab_View_Click(object sender, EventArgs e)
         {
             Line.Width = Tab_View.Width;
             Line.Left = Tab_View.Left;
+
+            if (!panel_Student.Controls.Contains(Student_View.Instance))
+            {
+                panel_Student.Controls.Add(Student_View.Instance);
+                Student_View.Instance.Dock = DockStyle.Fill;
+                Student_View.Instance.BringToFront();
+            }
+            else
+                Student_View.Instance.BringToFront();
+        }
+
+        private void Student_Load(object sender, EventArgs e)
+        {
+            Line.Width = Tab_Register.Width;
+            Line.Left = Tab_Register.Left;
+
+            if (!panel_Student.Controls.Contains(Student_Register.Instance))
+            {
+                panel_Student.Controls.Add(Student_Register.Instance);
+                Student_Register.Instance.Dock = DockStyle.Fill;
+                Student_Register.Instance.BringToFront();
+            }
+            else
+                Student_Register.Instance.BringToFront();
         }
     }
 }
