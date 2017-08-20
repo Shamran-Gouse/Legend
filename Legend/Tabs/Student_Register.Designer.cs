@@ -39,9 +39,9 @@
             this.txt_Address = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_Full_Name = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_Name_Initial = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.Dropdown_Grade = new Bunifu.Framework.UI.BunifuDropdown();
-            this.Dropdown_Medium = new Bunifu.Framework.UI.BunifuDropdown();
-            this.Dropdown_Gender = new Bunifu.Framework.UI.BunifuDropdown();
+            this.Dropdown_Medium = new System.Windows.Forms.ComboBox();
+            this.Dropdown_Gender = new System.Windows.Forms.ComboBox();
+            this.Dropdown_Grade = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // Btn_Clear
@@ -210,90 +210,81 @@
             this.txt_Name_Initial.TabIndex = 1;
             this.txt_Name_Initial.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // Dropdown_Grade
-            // 
-            this.Dropdown_Grade.BackColor = System.Drawing.Color.Transparent;
-            this.Dropdown_Grade.BorderRadius = 3;
-            this.Dropdown_Grade.DisabledColor = System.Drawing.Color.Gray;
-            this.Dropdown_Grade.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Dropdown_Grade.ForeColor = System.Drawing.Color.White;
-            this.Dropdown_Grade.Items = new string[] {
-        "Grade :",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "OL",
-        "After OL",
-        "AL",
-        "After AL"};
-            this.Dropdown_Grade.Location = new System.Drawing.Point(508, 319);
-            this.Dropdown_Grade.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Dropdown_Grade.Name = "Dropdown_Grade";
-            this.Dropdown_Grade.NomalColor = System.Drawing.Color.DeepSkyBlue;
-            this.Dropdown_Grade.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.Dropdown_Grade.selectedIndex = 0;
-            this.Dropdown_Grade.Size = new System.Drawing.Size(217, 43);
-            this.Dropdown_Grade.TabIndex = 81;
-            // 
             // Dropdown_Medium
             // 
-            this.Dropdown_Medium.BackColor = System.Drawing.Color.Transparent;
-            this.Dropdown_Medium.BorderRadius = 3;
-            this.Dropdown_Medium.DisabledColor = System.Drawing.Color.Gray;
-            this.Dropdown_Medium.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Dropdown_Medium.ForeColor = System.Drawing.Color.White;
-            this.Dropdown_Medium.Items = new string[] {
-        "Medium :",
-        "Tamil",
-        "English"};
-            this.Dropdown_Medium.Location = new System.Drawing.Point(508, 373);
-            this.Dropdown_Medium.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Dropdown_Medium.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Dropdown_Medium.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Dropdown_Medium.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Dropdown_Medium.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dropdown_Medium.FormattingEnabled = true;
+            this.Dropdown_Medium.ItemHeight = 21;
+            this.Dropdown_Medium.Items.AddRange(new object[] {
+            "Medium :",
+            "Tamil",
+            "English"});
+            this.Dropdown_Medium.Location = new System.Drawing.Point(505, 388);
             this.Dropdown_Medium.Name = "Dropdown_Medium";
-            this.Dropdown_Medium.NomalColor = System.Drawing.Color.DeepSkyBlue;
-            this.Dropdown_Medium.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.Dropdown_Medium.selectedIndex = 0;
-            this.Dropdown_Medium.Size = new System.Drawing.Size(217, 44);
-            this.Dropdown_Medium.TabIndex = 91;
+            this.Dropdown_Medium.Size = new System.Drawing.Size(217, 29);
+            this.Dropdown_Medium.TabIndex = 109;
             // 
             // Dropdown_Gender
             // 
-            this.Dropdown_Gender.BackColor = System.Drawing.Color.Transparent;
-            this.Dropdown_Gender.BorderRadius = 3;
-            this.Dropdown_Gender.DisabledColor = System.Drawing.Color.Gray;
-            this.Dropdown_Gender.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Dropdown_Gender.ForeColor = System.Drawing.Color.White;
-            this.Dropdown_Gender.Items = new string[] {
-        "Gender :",
-        "Male",
-        "Female"};
-            this.Dropdown_Gender.Location = new System.Drawing.Point(508, 90);
-            this.Dropdown_Gender.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Dropdown_Gender.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Dropdown_Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Dropdown_Gender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Dropdown_Gender.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dropdown_Gender.FormattingEnabled = true;
+            this.Dropdown_Gender.ItemHeight = 21;
+            this.Dropdown_Gender.Items.AddRange(new object[] {
+            "Gender :",
+            "Male",
+            "Female"});
+            this.Dropdown_Gender.Location = new System.Drawing.Point(505, 104);
             this.Dropdown_Gender.Name = "Dropdown_Gender";
-            this.Dropdown_Gender.NomalColor = System.Drawing.Color.DeepSkyBlue;
-            this.Dropdown_Gender.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.Dropdown_Gender.selectedIndex = 0;
-            this.Dropdown_Gender.Size = new System.Drawing.Size(217, 43);
-            this.Dropdown_Gender.TabIndex = 70;
+            this.Dropdown_Gender.Size = new System.Drawing.Size(217, 29);
+            this.Dropdown_Gender.TabIndex = 108;
+            // 
+            // Dropdown_Grade
+            // 
+            this.Dropdown_Grade.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Dropdown_Grade.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Dropdown_Grade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Dropdown_Grade.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dropdown_Grade.FormattingEnabled = true;
+            this.Dropdown_Grade.ItemHeight = 21;
+            this.Dropdown_Grade.Items.AddRange(new object[] {
+            "Grade :",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "OL",
+            "After OL",
+            "AL",
+            "After AL"});
+            this.Dropdown_Grade.Location = new System.Drawing.Point(505, 333);
+            this.Dropdown_Grade.Name = "Dropdown_Grade";
+            this.Dropdown_Grade.Size = new System.Drawing.Size(217, 29);
+            this.Dropdown_Grade.TabIndex = 107;
             // 
             // Student_Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.Dropdown_Medium);
+            this.Controls.Add(this.Dropdown_Gender);
+            this.Controls.Add(this.Dropdown_Grade);
             this.Controls.Add(this.txt_Email);
             this.Controls.Add(this.txt_Contact_No);
             this.Controls.Add(this.txt_School);
             this.Controls.Add(this.txt_Address);
             this.Controls.Add(this.txt_Full_Name);
             this.Controls.Add(this.txt_Name_Initial);
-            this.Controls.Add(this.Dropdown_Grade);
-            this.Controls.Add(this.Dropdown_Medium);
-            this.Controls.Add(this.Dropdown_Gender);
             this.Controls.Add(this.Btn_Register);
             this.Controls.Add(this.Btn_Clear);
             this.Name = "Student_Register";
@@ -312,8 +303,8 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_Address;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_Full_Name;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_Name_Initial;
-        private Bunifu.Framework.UI.BunifuDropdown Dropdown_Grade;
-        private Bunifu.Framework.UI.BunifuDropdown Dropdown_Medium;
-        private Bunifu.Framework.UI.BunifuDropdown Dropdown_Gender;
+        private System.Windows.Forms.ComboBox Dropdown_Medium;
+        private System.Windows.Forms.ComboBox Dropdown_Gender;
+        private System.Windows.Forms.ComboBox Dropdown_Grade;
     }
 }

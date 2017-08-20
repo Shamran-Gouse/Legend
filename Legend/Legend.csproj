@@ -51,7 +51,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\CLASS_CON.cs" />
     <Compile Include="Classes\CLASS_STUDENT.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>

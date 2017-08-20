@@ -29,11 +29,13 @@ namespace Legend.Tabs
         public Student_Register()
         {
             InitializeComponent();
+
+            ClearFields(); // to clear fields
         }
 
         private void Btn_Register_Click(object sender, EventArgs e)
         {
-            if (txt_Name_Initial.Text == "" | txt_Full_Name.Text == "" | txt_Address.Text == "" | txt_School.Text == "" | txt_Contact_No.Text == "" | txt_Email.Text == "" | Dropdown_Gender.selectedIndex == -1 | Dropdown_Grade.selectedIndex == 0 | Dropdown_Medium.selectedIndex == -1)
+            if (txt_Name_Initial.Text == "" | txt_Full_Name.Text == "" | txt_Address.Text == "" | txt_School.Text == "" | txt_Contact_No.Text == "" | txt_Email.Text == "" | Dropdown_Gender.SelectedIndex == 0 | Dropdown_Grade.SelectedIndex == 0 | Dropdown_Medium.SelectedIndex == 0)
             {
                 MessageBox.Show("Please Enter Required Details");
             }
@@ -46,18 +48,16 @@ namespace Legend.Tabs
                 Student.School = txt_School.Text;
                 Student.Contact_No = txt_Contact_No.Text;
                 Student.Email = txt_Email.Text;
-                Student.Gender = Dropdown_Gender.selectedValue;
-                Student.Grade = Dropdown_Grade.selectedValue;
-                Student.Medium = Dropdown_Medium.selectedValue;
+                Student.Gender = Dropdown_Gender.Text;
+                Student.Grade = Dropdown_Grade.Text;
+                Student.Medium = Dropdown_Medium.Text;
 
-                Student.Register();
-                ClearFields();
-
-                MessageBox.Show("Registered Successfully");
+                Student.Register(); // register Method
+                ClearFields(); // to clear fields
             }
         }
 
-        private void ClearFields()
+        private void ClearFields() // to clear fields
         {
             txt_Name_Initial.Text = "";
             txt_Full_Name.Text = "";
@@ -65,14 +65,14 @@ namespace Legend.Tabs
             txt_School.Text = "";
             txt_Contact_No.Text = "";
             txt_Email.Text = "";
-            Dropdown_Gender.selectedIndex = 0;
-            Dropdown_Grade.selectedIndex = 0;
-            Dropdown_Medium.selectedIndex = 0;
+            Dropdown_Gender.SelectedIndex = 0;
+            Dropdown_Grade.SelectedIndex = 0;
+            Dropdown_Medium.SelectedIndex = 0;
         }
 
         private void Btn_Clear_Click(object sender, EventArgs e)
         {
-            ClearFields();
+            ClearFields(); // to clear fields
         }
     }
 }

@@ -1,0 +1,10 @@
+UPDATE Student SET Name_Intial = 'K.A.M Shamran',
+ Full_Name = 'Kawdul Ameer Mohamed Shamran',
+  Gender = 'Male',
+   Student_Address = '61, Arab Road, Beruwala',
+    School = 'Al - Humaisara National School',
+	 Contact_No = '0770242898',
+	  Email = 'shamrangouse.sg@gmail.com',
+	   Grade = 'AL',
+	    Medium = 'Tamil'
+		 WHERE ID = '1'
