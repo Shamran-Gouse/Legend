@@ -82,5 +82,17 @@ namespace Legend
             else
                 Class.Instance.BringToFront();
         }
+
+        private void Btn_Teacher_Click(object sender, EventArgs e)
+        {
+            if (!panel_Body.Controls.Contains(Teacher.Instance))
+            {
+                panel_Body.Controls.Add(Teacher.Instance);
+                Teacher.Instance.Dock = DockStyle.Fill;
+                Teacher.Instance.BringToFront();
+            }
+            else
+                Teacher.Instance.BringToFront();
+        }
     }
 }

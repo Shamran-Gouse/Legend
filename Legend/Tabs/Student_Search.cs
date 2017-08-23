@@ -79,7 +79,7 @@ namespace Legend.Tabs
 
         private void Btn_Update_Click(object sender, EventArgs e)
         {
-            if (txt_Search.Text == "" |txt_Name_Initial.Text == "" | txt_Full_Name.Text == "" | txt_Address.Text == "" | txt_School.Text == "" | txt_Contact_No.Text == "" | txt_Email.Text == "" | Dropdown_Gender.SelectedIndex == 0 | Dropdown_Grade.SelectedIndex == 0 | Dropdown_Medium.SelectedIndex == 0)
+            if (txt_Search.Text == "" |txt_Name_Initial.Text == "" | txt_Full_Name.Text == "" | txt_Address.Text == "" | txt_School.Text == "" | txt_Contact_No.Text == "" | Dropdown_Gender.SelectedIndex == 0 | Dropdown_Grade.SelectedIndex == 0 | Dropdown_Medium.SelectedIndex == 0)
             {
                 MessageBox.Show("Please Enter Required Details");
             }
@@ -111,13 +111,22 @@ namespace Legend.Tabs
             }
             else
             {
-                int ID = Convert.ToInt32(txt_Search.Text);
+                DialogResult dr = MessageBox.Show("Do you want to Remove this User?", "Are you sure?", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 
-                CLASS_STUDENT Student = new CLASS_STUDENT();
-                Student.Delete(ID); // Update Method Method
-                ClearFields(); // to clear fields
+                if (dr == DialogResult.Yes)
+                {
+                    int ID = Convert.ToInt32(txt_Search.Text);
+
+                    CLASS_STUDENT Student = new CLASS_STUDENT();
+                    Student.Delete(ID); // Update Method Method
+                    ClearFields(); // to clear fields
+                }
+                else
+                {
+                    ClearFields();
+                }
             }
-            
+
         }
     }
 }

@@ -35,7 +35,7 @@ namespace Legend.Tabs
 
         private void Btn_Register_Click(object sender, EventArgs e)
         {
-            if (txt_Name_Initial.Text == "" | txt_Full_Name.Text == "" | txt_Address.Text == "" | txt_School.Text == "" | txt_Contact_No.Text == "" | txt_Email.Text == "" | Dropdown_Gender.SelectedIndex == 0 | Dropdown_Grade.SelectedIndex == 0 | Dropdown_Medium.SelectedIndex == 0)
+            if (txt_Name_Initial.Text == "" | txt_Full_Name.Text == "" | txt_Address.Text == "" | txt_School.Text == "" | txt_Contact_No.Text == "" | Dropdown_Gender.SelectedIndex == 0 | Dropdown_Grade.SelectedIndex == 0 | Dropdown_Medium.SelectedIndex == 0)
             {
                 MessageBox.Show("Please Enter Required Details");
             }

@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Legend.Classes
 {
-    class CLASS_STUDENT
+    class CLASS_TEACHER
     {
         private int id;
 
@@ -20,15 +20,9 @@ namespace Legend.Classes
 
         private string address;
 
-        private string school;
-
         private string contact_no;
 
-        private string email;        
-
-        private string grade;
-
-        private string medium;
+        private string email;
 
         public int Id
         {
@@ -95,19 +89,6 @@ namespace Legend.Classes
             }
         }
 
-        public string School
-        {
-            get
-            {
-                return school;
-            }
-
-            set
-            {
-                school = value;
-            }
-        }
-
         public string Contact_No
         {
             get
@@ -132,32 +113,6 @@ namespace Legend.Classes
             {
                 email = value;
             }
-        }        
-
-        public string Grade
-        {
-            get
-            {
-                return grade;
-            }
-
-            set
-            {
-                grade = value;
-            }
-        }
-
-        public string Medium
-        {
-            get
-            {
-                return medium;
-            }
-
-            set
-            {
-                medium = value;
-            }
         }
 
 
@@ -170,7 +125,7 @@ namespace Legend.Classes
                 con.ConnectionString = Legend.Properties.Settings.Default.ConnectionString;
                 con.Open();
 
-                using (SqlCommand cmd = new SqlCommand("SELECT MAX(ID) FROM Student", con))
+                using (SqlCommand cmd = new SqlCommand("SELECT MAX(T_ID) FROM Teacher", con))
                 {
 
                     using (SqlDataReader reader = cmd.ExecuteReader())
@@ -211,7 +166,7 @@ namespace Legend.Classes
                     con.ConnectionString = Legend.Properties.Settings.Default.ConnectionString;
                     con.Open();
 
-                    using (SqlCommand cmd = new SqlCommand("INSERT INTO Student (ID, Name_Intial, Full_Name, Gender, Student_Address, School, Contact_No, Email, Grade, Medium) VALUES ('" + (GetMaxID() + 1) + "', '" + name_intial + "', '" + full_name + "', '" + gender + "', '" + address + "', '" + school + "', '" + contact_no + "', '" + email + "', '" + grade + "', '" + medium + "')", con))
+                    using (SqlCommand cmd = new SqlCommand("INSERT INTO Teacher (T_ID, Name_Intial, Full_Name, Gender, Teacher_Address, Contact_No, Email) VALUES ('" + (GetMaxID() + 1) + "', '" + name_intial + "', '" + full_name + "', '" + gender + "', '" + address + "', '" + contact_no + "', '" + email + "')", con))
                     {
                         int result = cmd.ExecuteNonQuery();
 
@@ -236,7 +191,7 @@ namespace Legend.Classes
                 con.ConnectionString = Legend.Properties.Settings.Default.ConnectionString;
                 con.Open();
 
-                using (SqlCommand cmd = new SqlCommand("SELECT * From Student Where ID = '" + ID + "' ", con))
+                using (SqlCommand cmd = new SqlCommand("SELECT * From Teacher Where T_ID = '" + ID + "' ", con))
                 {
                     using (SqlDataReader reader = cmd.ExecuteReader())
                     {
@@ -251,16 +206,13 @@ namespace Legend.Classes
                                     full_name = reader[2].ToString();
                                     gender = reader[3].ToString();
                                     address = reader[4].ToString();
-                                    school = reader[5].ToString();
-                                    contact_no = reader[6].ToString();
-                                    email = reader[7].ToString();
-                                    grade = reader[8].ToString();
-                                    medium = reader[9].ToString();
+                                    contact_no = reader[5].ToString();
+                                    email = reader[6].ToString();
                                 }
                             }
                             else
                             {
-                                MessageBox.Show("Student ID Does Not Exist");
+                                MessageBox.Show("Teacher ID Does Not Exist");
                             }
                         }
                         catch (Exception ex)
@@ -280,7 +232,7 @@ namespace Legend.Classes
                 con.Open();
                 int result = 0;
 
-                using (SqlCommand cmd = new SqlCommand("UPDATE Student SET Name_Intial = '" + name_intial + "', Full_Name = '" + full_name + "', Gender = '" + gender + "', Student_Address = '" + address + "', School = '" + school + "', Contact_No = '" + contact_no + "', Email = '" + email + "', Grade = '" + grade + "', Medium = '" + medium + "' WHERE (ID = '"+ ID +"') ", con))
+                using (SqlCommand cmd = new SqlCommand("UPDATE Teacher SET Name_Intial = '" + name_intial + "', Full_Name = '" + full_name + "', Gender = '" + gender + "', Teacher_Address = '" + address + "', Contact_No = '" + contact_no + "', Email = '" + email + "' WHERE (T_ID = '" + ID + "') ", con))
                 {
                     try
                     {
@@ -307,7 +259,7 @@ namespace Legend.Classes
                 con.Open();
                 int result = 0;
 
-                using (SqlCommand cmd = new SqlCommand("DELETE FROM Student WHERE ID = '"+ ID +"'", con))
+                using (SqlCommand cmd = new SqlCommand("DELETE FROM Teacher WHERE T_ID = '" + ID + "'", con))
                 {
                     try
                     {

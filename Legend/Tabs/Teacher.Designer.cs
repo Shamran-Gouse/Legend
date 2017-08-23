@@ -1,6 +1,6 @@
 ﻿namespace Legend.Tabs
 {
-    partial class Class
+    partial class Teacher
     {
         /// <summary> 
         /// Required designer variable.
@@ -33,7 +33,7 @@
             this.Tab_Search = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Line = new Bunifu.Framework.UI.BunifuSeparator();
             this.panel_Student = new System.Windows.Forms.Panel();
-            this.Tab_Create = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.Tab_Register = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.SuspendLayout();
             // 
             // bunifuCustomLabel1
@@ -44,11 +44,11 @@
             this.bunifuCustomLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(367, 41);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(350, 41);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(96, 32);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(129, 32);
             this.bunifuCustomLabel1.TabIndex = 11;
-            this.bunifuCustomLabel1.Text = "CLASS";
+            this.bunifuCustomLabel1.Text = "TEACHER";
             // 
             // Tab_View
             // 
@@ -97,20 +97,20 @@
             this.panel_Student.Size = new System.Drawing.Size(830, 515);
             this.panel_Student.TabIndex = 7;
             // 
-            // Tab_Create
+            // Tab_Register
             // 
-            this.Tab_Create.AutoSize = true;
-            this.Tab_Create.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Tab_Create.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tab_Create.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Tab_Create.Location = new System.Drawing.Point(68, 96);
-            this.Tab_Create.Name = "Tab_Create";
-            this.Tab_Create.Size = new System.Drawing.Size(56, 16);
-            this.Tab_Create.TabIndex = 6;
-            this.Tab_Create.Text = "CREATE";
-            this.Tab_Create.Click += new System.EventHandler(this.Tab_Create_Click);
+            this.Tab_Register.AutoSize = true;
+            this.Tab_Register.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Tab_Register.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tab_Register.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Tab_Register.Location = new System.Drawing.Point(68, 96);
+            this.Tab_Register.Name = "Tab_Register";
+            this.Tab_Register.Size = new System.Drawing.Size(66, 16);
+            this.Tab_Register.TabIndex = 6;
+            this.Tab_Register.Text = "REGISTER";
+            this.Tab_Register.Click += new System.EventHandler(this.Tab_Register_Click);
             // 
-            // Class
+            // Teacher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -119,10 +119,10 @@
             this.Controls.Add(this.Tab_Search);
             this.Controls.Add(this.Line);
             this.Controls.Add(this.panel_Student);
-            this.Controls.Add(this.Tab_Create);
-            this.Name = "Class";
+            this.Controls.Add(this.Tab_Register);
+            this.Name = "Teacher";
             this.Size = new System.Drawing.Size(830, 646);
-            this.Load += new System.EventHandler(this.Class_Load);
+            this.Load += new System.EventHandler(this.Teacher_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,6 +135,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel Tab_Search;
         private Bunifu.Framework.UI.BunifuSeparator Line;
         private System.Windows.Forms.Panel panel_Student;
-        private Bunifu.Framework.UI.BunifuCustomLabel Tab_Create;
+        private Bunifu.Framework.UI.BunifuCustomLabel Tab_Register;
     }
 }

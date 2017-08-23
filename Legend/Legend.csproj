@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\CLASS_STUDENT.cs" />
+    <Compile Include="Classes\CLASS_TEACHER.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,11 +91,29 @@
     <Compile Include="Tabs\Student_View.Designer.cs">
       <DependentUpon>Student_View.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tabs\UserControl1.cs">
+    <Compile Include="Tabs\Teacher.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Tabs\UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <Compile Include="Tabs\Teacher.Designer.cs">
+      <DependentUpon>Teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Teacher_Register.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Teacher_Register.Designer.cs">
+      <DependentUpon>Teacher_Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Teacher_Search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Teacher_Search.Designer.cs">
+      <DependentUpon>Teacher_Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Teacher_View.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tabs\Teacher_View.Designer.cs">
+      <DependentUpon>Teacher_View.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -123,8 +142,17 @@
     <EmbeddedResource Include="Tabs\Student_View.resx">
       <DependentUpon>Student_View.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tabs\UserControl1.resx">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <EmbeddedResource Include="Tabs\Teacher.resx">
+      <DependentUpon>Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Teacher_Register.resx">
+      <DependentUpon>Teacher_Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Teacher_Search.resx">
+      <DependentUpon>Teacher_Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabs\Teacher_View.resx">
+      <DependentUpon>Teacher_View.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

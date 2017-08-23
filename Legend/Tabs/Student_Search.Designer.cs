@@ -68,7 +68,7 @@
             this.Btn_Remove.IdleFillColor = System.Drawing.Color.White;
             this.Btn_Remove.IdleForecolor = System.Drawing.Color.DodgerBlue;
             this.Btn_Remove.IdleLineColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Remove.Location = new System.Drawing.Point(708, 463);
+            this.Btn_Remove.Location = new System.Drawing.Point(588, 463);
             this.Btn_Remove.Margin = new System.Windows.Forms.Padding(5);
             this.Btn_Remove.Name = "Btn_Remove";
             this.Btn_Remove.Size = new System.Drawing.Size(110, 47);
@@ -94,7 +94,7 @@
             this.Btn_Update.IdleFillColor = System.Drawing.Color.White;
             this.Btn_Update.IdleForecolor = System.Drawing.Color.DodgerBlue;
             this.Btn_Update.IdleLineColor = System.Drawing.Color.DodgerBlue;
-            this.Btn_Update.Location = new System.Drawing.Point(588, 463);
+            this.Btn_Update.Location = new System.Drawing.Point(708, 463);
             this.Btn_Update.Margin = new System.Windows.Forms.Padding(5);
             this.Btn_Update.Name = "Btn_Update";
             this.Btn_Update.Size = new System.Drawing.Size(110, 47);

@@ -70,10 +70,15 @@ namespace Legend.Tabs
             {
                 panel_Student.Controls.Add(Student_View.Instance);
                 Student_View.Instance.Dock = DockStyle.Fill;
+                Student_View.Search(); // Search method
                 Student_View.Instance.BringToFront();
             }
             else
+            {
+                Student_View.Search(); // Search method
                 Student_View.Instance.BringToFront();
+            }
+                
         }
 
         private void Student_Load(object sender, EventArgs e)

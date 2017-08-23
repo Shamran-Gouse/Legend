@@ -104,7 +104,7 @@
             this.bunifuCustomLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(314, 41);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(354, 41);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(122, 32);
             this.bunifuCustomLabel1.TabIndex = 5;

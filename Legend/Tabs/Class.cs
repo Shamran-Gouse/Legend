@@ -47,5 +47,11 @@ namespace Legend.Tabs
             Line.Width = Tab_View.Width;
             Line.Left = Tab_View.Left;
         }
+
+        private void Class_Load(object sender, EventArgs e)
+        {
+            Line.Width = Tab_Create.Width;
+            Line.Left = Tab_Create.Left;
+        }
     }
 }
